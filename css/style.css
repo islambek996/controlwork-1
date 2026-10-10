@@ -54,10 +54,12 @@ body {
 }
 
 .hero-title {
+    font-size: 54px;
     font-weight: 600;
 }
 
 .hero-description {
+    max-width: 520px;
     font-size: 20px;
     font-weight: 700;
 }
@@ -66,15 +68,6 @@ body {
     width: 100%;
     max-height: 500px;
     object-fit: contain;
-}
-
-#cars {
-    padding-top: 100px !important;
-    padding-bottom: 100px !important;
-}
-
-.hero-description {
-    max-width: 520px;
 }
 
 .price-title {
