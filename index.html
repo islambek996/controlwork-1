@@ -1,274 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Автосалон ABC AUTO: подбор автомобилей Toyota, специальные предложения и обслуживание.">
+    <title>ABC AUTO – Автосалон</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <header class="bg-dark-subtle mb-5">
+    <header class="site-header bg-dark-subtle">
         <nav class="navbar navbar-expand-lg container">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-4 text-dark fs-6">
-                        <li class="nav-item me-2">
-                            <a class="nav-link" href="#">Подбор авто</a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="nav-link" href="#">О компании</a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="nav-link" href="#">Техцентр</a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="nav-link" href="#">Отзывы</a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="nav-link" href="#">Контакты</a>
-                    </ul>
-                    <div class="ms-auto">
-                        <button class="btn bg-orange text-white navbar-collapse" type="button"
-                            data-bs-target="#registerModal" aria-label="Регистрация" data-bs-toggle="modal">Обратный
-                            звонок</button>
-                    </div>
-                </div>
+            <a class="navbar-brand me-lg-4" href="#" aria-label="ABC AUTO – главная">
+                <img src="img/logo.png" class="site-logo" alt="ABC AUTO">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Открыть меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-links me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#cars">Подбор авто</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#advantages">Техцентр</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+                </ul>
+                <button class="btn btn-accent callback-button" type="button" data-bs-toggle="modal"
+                    data-bs-target="#callbackModal">Обратный звонок</button>
             </div>
         </nav>
     </header>
-    <section class="py-5 mt-4 bg-body-secondary mx-3 rounded ">
-        <div class="container">
+
+    <main>
+        <section class="hero-section container-fluid" id="cars">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-6 hero-copy">
+                        <div class="discount-badge">
+                            <span>Скидки до</span>
+                            <strong>350 000 ₽</strong>
+                        </div>
+                        <h1 class="hero-title">Грандиозная распродажа Toyota</h1>
+                        <p class="hero-description">Получите специальную цену + подарок на выбор при покупке авто</p>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img src="img/main-img.png" class="img-fluid hero-image" alt="Автомобили Toyota на распродаже">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="price-section container" aria-labelledby="price-title">
+            <form class="price-form" action="#" method="post">
+                <div class="price-form-title" id="price-title">Получите специальную цену</div>
+                <div class="price-form-fields">
+                    <label class="visually-hidden" for="priceName">Ваше имя</label>
+                    <input class="form-control" id="priceName" name="name" type="text" placeholder="Ваше имя" autocomplete="name" required>
+                    <label class="visually-hidden" for="pricePhone">Ваш телефон</label>
+                    <input class="form-control" id="pricePhone" name="phone" type="tel" placeholder="Ваш телефон" autocomplete="tel" required>
+                    <button class="btn btn-accent" type="submit">Получить скидку</button>
+                </div>
+                <p class="privacy-note">Нажимая кнопку «Получить скидку», Вы даете согласие на обработку своих персональных данных</p>
+            </form>
+        </section>
+
+        <section class="about-section container section-spacing" id="about">
             <div class="row align-items-center g-4 g-lg-5">
                 <div class="col-12 col-lg-6">
-                    <span class="badge bg-orange text-white mb-3">Скидки до <strong>350 000</strong></span>
-                    <h1 class="title-main fw-bold">
-                        Грандиозная распродажа Toyota
-                    </h1>
-                    <p class="main-text">
-                        Получите специальную цену + подарок на выбор при покупке авто
-                    </p>
+                    <h2 class="section-title">Об автосалоне ABC</h2>
+                    <p class="body-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar auctor tellus, id volutpat dui dictum vitae. Sed ac mauris nisi. Maecenas quis sollicitudin dolor, eget molestie dolor. Vivamus sed magna euismod, facilisis eros vitae, vehicula justo. Ut id consequat risus, vitae accumsan ligula. Proin egestas odio sit amet laoreet vulputate. Suspendisse vitae vestibulum quam. Vivamus lectus justo, bibendum at laoreet vel, rhoncus nec sem. Phasellus at mollis magna, in bibendum massa. Praesent malesuada sit amet nibh ut vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <a class="btn btn-accent about-button" href="#advantages">Узнать больше</a>
                 </div>
-                <div class="col-12 col-lg-6 ">
-                    <img src="img/main-img.png" class="img-fluid rounded w-100"
-                        alt="A female designer reviews a 3D-printed prototype alongside its technical drawing blueprint on a desk.">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5 mt-4">
-        <div class="container">
-            <div class="row align-items-center g-4 g-lg-5">
                 <div class="col-12 col-lg-6">
-                    <h1 class="title-main fw-bold">
-                        Об автосалоне ABC
-                    </h1>
-                    <p class="main-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, repellat nisi. Rem quisquam
-                        pariatur repellat minima numquam veniam et, harum a hic adipisci ad quis tempore dolorum cum vel
-                        aliquam.
-                        Nihil rem culpa neque tempora minima amet aspernatur provident reprehenderit iste possimus
-                        quidem pariatur est quam consequuntur, eius natus autem! Debitis aspernatur excepturi, nihil
-                        consequatur reiciendis temporibus quis vero delectus?
-                        Quos dolorum veniam ad eius veritatis. Ratione ea illum quae excepturi. Totam, quidem. Autem,
-                        officia! Minus quidem rerum, beatae ex perspiciatis, vitae corporis qui sint accusantium ducimus
-                    </p>
-                    <a class="btn bg-orange text-white mt-2 task-link px-5 shadow-lg" href="#">Узнать больше</a>
-                </div>
-                <div class="col-12 col-lg-6 ">
-                    <img src="img/photo-about.jpg" class="img-fluid rounded w-auto rounded-4"
-                        alt="A female designer reviews a 3D-printed prototype alongside its technical drawing blueprint on a desk.">
+                    <img src="img/photo-about.jpg" class="img-fluid about-image" alt="Команда автосалона ABC AUTO" loading="lazy">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section class="advantages-section container section-spacing" id="advantages">
+            <h2 class="section-title">Преимущества Toyota</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                <article class="col">
+                    <div class="advantage-card h-100">
+                        <img src="img/photo-1.jpg" class="advantage-image" alt="Автомобили для разных задач" loading="lazy">
+                        <h3 class="advantage-title">Автомобиль<br>для любых задач</h3>
+                        <p class="advantage-copy">Практичные модели для повседневных поездок, работы и путешествий. Выберите автомобиль под свой ритм жизни.</p>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="advantage-card h-100">
+                        <img src="img/photo-2.jpg" class="advantage-image" alt="Фирменный стиль Toyota" loading="lazy">
+                        <h3 class="advantage-title">Единый<br>корпоративный стиль</h3>
+                        <p class="advantage-copy">Узнаваемый дизайн, внимание к деталям и продуманный внешний вид в каждой модели.</p>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="advantage-card h-100">
+                        <img src="img/photo-3.jpg" class="advantage-image" alt="Современные автомобили Toyota" loading="lazy">
+                        <h3 class="advantage-title">Современные<br>технологичные решения</h3>
+                        <p class="advantage-copy">Полезные технологии и инженерные решения для комфортного и уверенного вождения.</p>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="advantage-card h-100">
+                        <img src="img/photo-4.jpg" class="advantage-image" alt="Автомобильные комплектующие" loading="lazy">
+                        <h3 class="advantage-title">Надежные запчасти от производителя</h3>
+                        <p class="advantage-copy">Качественные комплектующие и расходные материалы для обслуживания автомобиля.</p>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="advantage-card h-100">
+                        <img src="img/photo-5.jpg" class="advantage-image" alt="Салон автомобиля Toyota" loading="lazy">
+                        <h3 class="advantage-title">Заслуживает<br>доверия</h3>
+                        <p class="advantage-copy">Комфортный салон, продуманная эргономика и внимание к удобству водителя и пассажиров.</p>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="advantage-card h-100">
+                        <img src="img/photo-6.jpg" class="advantage-image" alt="Автомобиль Toyota на дороге" loading="lazy">
+                        <h3 class="advantage-title">Качество,<br>проверенное временем</h3>
+                        <p class="advantage-copy">Сочетание практичности, качества исполнения и опыта, проверенного временем.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <section class="container mt-5 pt-lg-5 mb-5 pb-5">
-        <div class="row">
-            <div class="col">
-                <h2 class="fs-2 fw-bold">
-                    Contents Strategies
-                </h2>
-                <p class="py-2 fs-6 fw-medium">
-                    We focus on ergonomics and meeting you where you work.
-                    It's only a keystroke away.
-                </p>
-            </div>
-        </div>
-        <div class="row mt-1 row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/photo-1.jpg" class="card-img-top"
-                        alt="Two professionals collaborating over laptops and paperwork at a desk.">
-                    <div class="card-body">
-                        <h3 class="card-title my-4 fs-4 fw-bold">
-                            Increasing Prosperity With Positive Thinking
-                        </h3>
+        <section class="reviews-section container section-spacing" id="reviews">
+            <h3 class="section-title">Отзывы</h3>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <article class="col">
+                    <div class="review-card h-100">
+                        <img src="img/person-1.jpg" class="review-avatar" alt="Сергей Васильев" loading="lazy">
+                        <h4 class="review-name">Сергей Васильев</h4>
+                        <p class="review-copy">«Я нахожусь в салоне ALTERA, всем советую, хороший коллектив, добрые люди, приветствуют, это не обман, вам гарантия 100 % точно. Мы приехали приобрести автомобиль в салон».</p>
+                        <a href="#contacts" class="review-more">Подробнее</a>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/photo-2.jpg" class="card-img-top"
-                        alt="Black and white silhouette of three business people looking out floor-to-ceiling windows of a high-rise building with a city skyline view.">
-                    <div class="card-body">
-                        <p class="fw-normal fs-6">
-                            By <strong>Wahid Ari</strong>, 03 March 2019
-                        </p>
-                        <h3 class="card-title my-4 fs-4 fw-bold">
-                            Motivation Is The First Step To Success
-                        </h3>
+                </article>
+                <article class="col">
+                    <div class="review-card h-100">
+                        <img src="img/person-2.jpg" class="review-avatar" alt="Анастасия Селезнева" loading="lazy">
+                        <h4 class="review-name">Анастасия Селезнева</h4>
+                        <p class="review-copy">Посетила автосалон и была впечатлена выбором автомобилей и уровнем обслуживания. Консультант быстро помог подобрать машину под мои запросы!</p>
+                        <a href="#contacts" class="review-more">Подробнее</a>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/photo-3.jpg" class="card-img-top"
-                        alt="A silhouette of a person standing at the top of a staircase reaching towards a flying bird under a cloudy sky.">
-                    <div class="card-body">
-                        <p class="fw-normal fs-6">
-                            By <strong>Wahid Ari</strong>, 03 March 2019
-                        </p>
-                        <h3 class="card-title my-4 fs-4 fw-bold">
-                            Success Steps For Your Personal
-                        </h3>
+                </article>
+                <article class="col">
+                    <div class="review-card h-100">
+                        <img src="img/person-3.jpg" class="review-avatar" alt="Виктория Колесникова" loading="lazy">
+                        <h4 class="review-name">Виктория Колесникова</h4>
+                        <p class="review-copy">Прежде чем приехать в дилерский центр, мы опирались на реальные отзывы. Были приятно удивлены качеством обслуживания и открытым диалогом о вариантах приобретения авто.</p>
+                        <a href="#contacts" class="review-more">Подробнее</a>
                     </div>
-                </div>
+                </article>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/photo-4.jpg" class="card-img-top"
-                        alt="Low-angle view of modern glass skyscrapers reflecting the sky.">
-                    <div class="card-body">
-                        <p class="fw-normal fs-6">
-                            By <strong>Wahid Ari</strong>, 03 March 2019
-                        </p>
-                        <h3 class="card-title my-4 fs-4 fw-bold">
-                            Success Steps For Your Personal Or Business
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/photo-5.jpg" class="card-img-top"
-                        alt="Low-angle view of modern glass skyscrapers reflecting the sky.">
-                    <div class="card-body">
-                        <p class="fw-normal fs-6">
-                            By <strong>Wahid Ari</strong>, 03 March 2019
-                        </p>
-                        <h3 class="card-title my-4 fs-4 fw-bold">
-                            Success Steps For Your Personal Or Business
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/photo-6.jpg" class="card-img-top"
-                        alt="Low-angle view of modern glass skyscrapers reflecting the sky.">
-                    <div class="card-body">
-                        <p class="fw-normal fs-6">
-                            By <strong>Wahid Ari</strong>, 03 March 2019
-                        </p>
-                        <h3 class="card-title my-4 fs-4 fw-bold">
-                            Success Steps For Your Personal Or Business
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container mt-5 pt-lg-5 mb-5 pb-5">
-        <div class="row">
-            <div class="col">
-                <h2 class="fs-2 fw-bold">
-                    Contents Strategies
-                </h2>
-                <p class="py-2 fs-6 fw-medium">
-                    We focus on ergonomics and meeting you where you work.
-                    It's only a keystroke away.
-                </p>
-            </div>
-        </div>
-        <div class="row mt-1 row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/person-1.jpg" class="card-img-top review"
-                        alt="Two professionals collaborating over laptops and paperwork at a desk.">
-                    <div class="card-body">
-                        <h3 class="card-title my-4 fs-4 fw-bold">
-                            Increasing Prosperity With Positive Thinking
-                        </h3>
-                        <a href="#" type="button" class="btn review-more">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/person-2.jpg" class="card-img-top review"
-                        alt="Black and white silhouette of three business people looking out floor-to-ceiling windows of a high-rise building with a city skyline view.">
-                    <div class="card-body">
-                        <h3 class="card-title my-4 fs-4 fw-bold">
-                            Motivation Is The First Step To Success
-                        </h3>
-                        <a href="#" type="button" class="btn review-more">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/person-3.jpg" class="card-img-top review"
-                        alt="A silhouette of a person standing at the top of a staircase reaching towards a flying bird under a cloudy sky.">
-                    <div class="card-body">
-                        <h3 class="card-title my-4 fs-4 fw-bold">
-                            Success Steps For Your Personal
-                        </h3>
-                        <a href="#" type="button" class="btn review-more">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-    </section>
+        </section>
+    </main>
 
-    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerTitle" aria-hidden="true"
-        role="dialog">
+    <footer class="site-footer" id="contacts">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-12 col-md-4 footer-item">
+                    <img src="img/phone.png" alt="" class="footer-icon">
+                    <div><a href="tel:+78005519431">+7 (800) 551-94-31</a><br><a href="tel:+74952921867">+7 (495) 292-18-67</a></div>
+                </div>
+                <div class="col-12 col-md-4 footer-item">
+                    <img src="img/clock.png" alt="" class="footer-icon">
+                    <span>Ежедневно с 08:00 до 21:00</span>
+                </div>
+                <div class="col-12 col-md-4 footer-address">
+                    <span>Россия, Москва, 38КМ МКАД, 6Бс1</span>
+                    <a href="https://maps.google.com/?q=38%D0%BA%D0%BC+%D0%9C%D0%9A%D0%90%D0%94+6%D0%91%D1%811+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0" target="_blank" rel="noopener noreferrer">Схема проезда</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header border-0">
-                    <h2 class="modal-title fs-4 fw-semibold" id="registerTitle">Регистрация</h2>
+                <div class="modal-header">
+                    <h2 class="modal-title fs-4" id="callbackTitle">Заказать обратный звонок</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
-                <form id="registerForm">
+                <form action="#" method="post">
                     <div class="modal-body">
                         <div class="mb-3">
-                            <label for="regName" class="form-label">Имя пользователя</label>
-                            <input type="text" class="form-control" id="regName" name="name" placeholder="Введите имя"
-                                required autofocus>
+                            <label for="callbackName" class="form-label">Ваше имя</label>
+                            <input class="form-control" type="text" id="callbackName" name="name" placeholder="Ваше имя" autocomplete="name" required>
                         </div>
-                        <div class="mb-3">
-                            <label for="regTel" class="form-label">Телефон</label>
-                            <input type="tel" class="form-control" id="regTel" name="phone"
-                                placeholder="Введите номер телефона" required>
+                        <div>
+                            <label for="callbackPhone" class="form-label">Ваш телефон</label>
+                            <input class="form-control" type="tel" id="callbackPhone" name="phone" placeholder="Ваш телефон" autocomplete="tel" required>
                         </div>
-
-                        <div class="modal-footer border-0">
-                            <button type="submit" class="btn bg-orange w-100 py-2 fw-semibold text-white">Заказать
-                                звонок</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-accent w-100">Заказать звонок</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -276,5 +210,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
