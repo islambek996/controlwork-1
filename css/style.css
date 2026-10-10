@@ -86,8 +86,7 @@ body {
 
 .advantage-image {
     width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 1;
+    height: 410px;
     margin-bottom: 16px;
     object-fit: cover;
     border-radius: 8px;
