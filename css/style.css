@@ -78,10 +78,6 @@ body {
     font-size: 40px;
 }
 
-.advantages-section {
-    max-width: 1050px;
-}
-
 .advantage-card {
     display: flex;
     flex-direction: column;
