@@ -3,11 +3,7 @@ body {
     color: #262626;
 }
 
-.site-logo {
-    width: 150px;
-    max-height: 54px;
-    object-fit: contain;
-}
+
 
 .nav-links .nav-link {
     color: #262626;
