@@ -51,7 +51,7 @@ body {
 }
 
 .hero-title {
-    font-size: 54px;
+    font-size: min(54px, 9vw);
     font-weight: 600;
 }
 
