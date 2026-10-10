@@ -23,6 +23,7 @@ body {
     background-color: #ca0100;
     border-color: #ca0100;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .btn-accent:hover,
@@ -73,6 +74,10 @@ body {
 .price-title {
     font-size: 24px;
     font-weight: 600;
+}
+
+.price-form > p {
+    font-size: 13px;
 }
 
 .section-title {
