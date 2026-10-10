@@ -15,34 +15,32 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="top">
-    <header class="site-header bg-dark-subtle">
-        <nav class="navbar navbar-expand-lg container">
-            <a class="navbar-brand me-lg-4" href="#top">
+<body>
+    <header class="bg-dark-subtle">
+        <nav class="navbar navbar-expand-lg container py-2">
+            <a class="navbar-brand me-lg-4" href="#">
                 <img src="images/logo.png" class="site-logo" alt="ABC AUTO">
             </a>
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Открыть меню">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav nav-links me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#cars">Подбор авто</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">О компании</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacts">Техцентр</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+                <ul class="navbar-nav nav-links me-auto fs-6">
+                    <li class="nav-item"><a class="nav-link" href="#">Подбор авто</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Техцентр</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
                 </ul>
-                <button class="btn btn-accent callback-button" type="button" data-bs-toggle="modal"
+                <button class="btn btn-accent callback-button " type="button" data-bs-toggle="modal"
                     data-bs-target="#callbackModal">Обратный звонок</button>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="bg-body-secondary rounded-3 mx-3 my-4 py-4 py-xl-5" id="cars">
+        <section class="bg-body-secondary rounded-3 mx-3 my-4 py-4 py-xl-5">
             <div class="container">
                 <div class="row align-items-center g-4">
                     <div class="col-12 col-xl-6 hero-copy">
@@ -51,10 +49,12 @@
                             <strong>350 000 ₽</strong>
                         </div>
                         <h1 class="hero-title mb-3">Грандиозная распродажа Toyota</h1>
-                        <p class="hero-description mb-0">Получите специальную цену + подарок на выбор при покупке авто</p>
+                        <p class="hero-description mb-0">Получите специальную цену + подарок на выбор при покупке авто
+                        </p>
                     </div>
                     <div class="col-12 col-xl-6">
-                        <img src="images/main-img.png" class="img-fluid hero-image" alt="Автомобили Toyota на распродаже">
+                        <img src="images/main-img.png" class="img-fluid hero-image"
+                            alt="Автомобили Toyota на распродаже">
                     </div>
                 </div>
             </div>
@@ -64,39 +64,41 @@
             <form class="price-form border rounded-4 p-4 p-md-5" action="#" method="get">
                 <div class="row g-3 align-items-center">
                     <div class="col-12 col-xl-2">
-                        <h2 class="price-title mb-0" id="price-title">Получите специальную цену</h2>
+                        <h2 class="price-title mb-0">Получите специальную цену</h2>
                     </div>
                     <div class="col-12 col-xl">
                         <label class="visually-hidden" for="priceName">Ваше имя</label>
-                        <input class="form-control bg-body-secondary py-3" id="priceName" name="name" type="text" placeholder="Ваше имя"
-                            autocomplete="name" required>
+                        <input class="form-control bg-body-secondary py-3" name="name" type="text"
+                            placeholder="Ваше имя" autocomplete="name" required>
                     </div>
                     <div class="col-12 col-xl">
                         <label class="visually-hidden" for="pricePhone">Ваш телефон</label>
-                        <input class="form-control bg-body-secondary py-3" id="pricePhone" name="phone" type="tel" placeholder="Ваш телефон"
-                            autocomplete="tel" required>
+                        <input class="form-control bg-body-secondary py-3" name="phone" type="tel"
+                            placeholder="Ваш телефон" autocomplete="tel" required>
                     </div>
                     <div class="col-12 col-xl-3">
                         <button class="btn btn-accent w-100 py-3" type="submit">Получить скидку</button>
                     </div>
                 </div>
-                <p class="small text-secondary mt-4 mb-0">Нажимая кнопку «Получить скидку», Вы даете согласие на обработку своих
+                <p class="small text-secondary mt-4 mb-0">Нажимая кнопку «Получить скидку», Вы даете согласие на
+                    обработку своих
                     персональных данных</p>
             </form>
         </section>
 
-        <section class="container mt-5" id="about">
+        <section class="container mt-5">
             <div class="row align-items-center g-4 g-lg-5">
                 <div class="col-12 col-lg-6">
                     <h2 class="section-title fw-semibold mb-4">Об автосалоне ABC</h2>
-                    <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar
+                    <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        pulvinar
                         auctor tellus, id volutpat dui dictum vitae. Sed ac mauris nisi. Maecenas quis sollicitudin
                         dolor, eget molestie dolor. Vivamus sed magna euismod, facilisis eros vitae, vehicula justo. Ut
                         id consequat risus, vitae accumsan ligula. Proin egestas odio sit amet laoreet vulputate.
                         Suspendisse vitae vestibulum quam. Vivamus lectus justo, bibendum at laoreet vel, rhoncus nec
                         sem. Phasellus at mollis magna, in bibendum massa. Praesent malesuada sit amet nibh ut
                         vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    <a class="btn btn-accent about-button" href="#advantages">Узнать больше</a>
+                    <a class="btn btn-accent about-button" href="#">Узнать больше</a>
                 </div>
                 <div class="col-12 col-lg-6">
                     <img src="images/photo-about.jpg" class="img-fluid rounded-3" alt="Команда автосалона ABC AUTO"
@@ -105,13 +107,13 @@
             </div>
         </section>
 
-        <section class="container mt-5 advantages-section" id="advantages">
+        <section class="container mt-5 advantages-section">
             <h3 class="section-title fw-bold mb-4">Преимущества Toyota</h3>
             <div class="row g-4">
                 <article class="col-12 col-md-6 col-xl-4">
                     <div class="advantage-card h-100">
-                        <img src="images/photo-1.jpg" class="advantage-image rounded-2" alt="Автомобили для разных задач"
-                            loading="lazy">
+                        <img src="images/photo-1.jpg" class="advantage-image rounded-2"
+                            alt="Автомобили для разных задач" loading="lazy">
                         <h3 class="advantage-title">Автомобиль<br>для любых задач</h3>
                         <p class="advantage-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Curabitur commodo mauris odio, at mattis lacus ullamcorper sit amet.</p>
@@ -119,7 +121,8 @@
                 </article>
                 <article class="col-12 col-md-6 col-xl-4">
                     <div class="advantage-card h-100">
-                        <img src="images/photo-2.jpg" class="advantage-image rounded-2" alt="Фирменный стиль Toyota" loading="lazy">
+                        <img src="images/photo-2.jpg" class="advantage-image rounded-2" alt="Фирменный стиль Toyota"
+                            loading="lazy">
                         <h3 class="advantage-title">Единый<br>корпоративный стиль</h3>
                         <p class="advantage-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Curabitur commodo mauris odio, at mattis lacus ullamcorper sit amet.</p>
@@ -127,8 +130,8 @@
                 </article>
                 <article class="col-12 col-md-6 col-xl-4">
                     <div class="advantage-card h-100">
-                        <img src="images/photo-3.jpg" class="advantage-image rounded-2" alt="Современные автомобили Toyota"
-                            loading="lazy">
+                        <img src="images/photo-3.jpg" class="advantage-image rounded-2"
+                            alt="Современные автомобили Toyota" loading="lazy">
                         <h3 class="advantage-title">Современные<br>технологичные решения</h3>
                         <p class="advantage-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Curabitur commodo mauris odio, at mattis lacus ullamcorper sit amet.</p>
@@ -136,8 +139,8 @@
                 </article>
                 <article class="col-12 col-md-6 col-xl-4">
                     <div class="advantage-card h-100">
-                        <img src="images/photo-4.jpg" class="advantage-image rounded-2" alt="Автомобильные комплектующие"
-                            loading="lazy">
+                        <img src="images/photo-4.jpg" class="advantage-image rounded-2"
+                            alt="Автомобильные комплектующие" loading="lazy">
                         <h3 class="advantage-title">Надежные запчасти от<br>производителя</h3>
                         <p class="advantage-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Curabitur commodo mauris odio, at mattis lacus ullamcorper sit amet.</p>
@@ -145,7 +148,8 @@
                 </article>
                 <article class="col-12 col-md-6 col-xl-4">
                     <div class="advantage-card h-100">
-                        <img src="images/photo-5.jpg" class="advantage-image rounded-2" alt="Салон автомобиля Toyota" loading="lazy">
+                        <img src="images/photo-5.jpg" class="advantage-image rounded-2" alt="Салон автомобиля Toyota"
+                            loading="lazy">
                         <h3 class="advantage-title">Заслуживает<br>доверия</h3>
                         <p class="advantage-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Curabitur commodo mauris odio, at mattis lacus ullamcorper sit amet.</p>
@@ -153,8 +157,8 @@
                 </article>
                 <article class="col-12 col-md-6 col-xl-4">
                     <div class="advantage-card h-100">
-                        <img src="images/photo-6.jpg" class="advantage-image rounded-2" alt="Автомобиль Toyota на дороге"
-                            loading="lazy">
+                        <img src="images/photo-6.jpg" class="advantage-image rounded-2"
+                            alt="Автомобиль Toyota на дороге" loading="lazy">
                         <h3 class="advantage-title">Качество,<br>проверенное временем</h3>
                         <p class="advantage-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Curabitur commodo mauris odio, at mattis lacus ullamcorper sit amet.</p>
@@ -163,8 +167,8 @@
             </div>
         </section>
 
-        <section class="container mt-5 mb-5" id="reviews">
-            <h3 class="section-title fw-bold mb-4">Отзывы</h3>
+        <section class="container mt-5 mb-5">
+            <h3 class=" section-title fw-bold mb-4">Отзывы</h3>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <article class="col">
                     <div class="review-card h-100">
@@ -199,7 +203,7 @@
         </section>
     </main>
 
-    <footer class="site-footer bg-dark text-white py-4" id="contacts">
+    <footer class="site-footer bg-dark text-white py-4">
         <div class="container">
             <div class="row align-items-center gy-3">
                 <div class="col-12 col-md-4 d-flex align-items-center gap-3">
@@ -213,7 +217,8 @@
                 </div>
                 <div class="col-12 col-md-4 footer-address">
                     <span>Россия, Москва, 38КМ МКАД, 6Бс1</span>
-                    <a class="footer-map" href="https://maps.google.com/?q=38%D0%BA%D0%BC+%D0%9C%D0%9A%D0%90%D0%94+6%D0%91%D1%811+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0"
+                    <a class="footer-map"
+                        href="https://maps.google.com/?q=38%D0%BA%D0%BC+%D0%9C%D0%9A%D0%90%D0%94+6%D0%91%D1%811+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0"
                         target="_blank" rel="noopener noreferrer">Схема проезда</a>
                 </div>
             </div>
