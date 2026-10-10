@@ -3,6 +3,10 @@ body {
     color: #262626;
 }
 
+.site-header {
+    background-color: #ced4da;
+}
+
 .site-logo {
     width: 150px;
     max-height: 54px;
@@ -31,10 +35,10 @@ body {
 .discount-badge {
     display: inline-block;
     margin-bottom: 20px;
-    padding: 10px 24px;
+    padding: 8px 28px;
     color: #fff;
     background-color: #ca0100;
-    border-radius: 8px;
+    border-radius: 50px;
     text-align: center;
 }
 
@@ -65,15 +69,40 @@ body {
     object-fit: contain;
 }
 
+.price-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
 .section-title {
     font-size: 40px;
 }
 
 .advantage-image {
     width: 100%;
-    height: 180px;
+    height: 100px;
     margin-bottom: 16px;
     object-fit: cover;
+}
+
+.advantage-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.advantage-copy {
+    font-size: 16px;
+    font-weight: 400;
+    color: #262626;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 24px 16px;
+    background-color: #eff0f0;
+    border-radius: 12px;
 }
 
 .review-avatar {
@@ -84,13 +113,30 @@ body {
     border-radius: 50%;
 }
 
+.review-name {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.review-copy {
+    flex-grow: 1;
+    margin-bottom: 16px;
+    color: #737373;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .review-more {
+    align-self: flex-start;
+    margin-top: auto;
     padding: 6px 30px 6px 12px;
+    background-color: #dedede;
     background-image: url("../images/arrow.png");
     background-repeat: no-repeat;
     background-position: right center;
+    border-radius: 20px;
     color: #262626;
-    background-color: #dedede;
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
@@ -133,5 +179,13 @@ body {
 
     .section-title {
         font-size: 28px;
+    }
+
+    .price-title {
+        font-size: 22px;
+    }
+
+    .advantage-image {
+        height: 180px;
     }
 }
