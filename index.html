@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="top">
     <header class="bg-dark-subtle">
         <nav class="navbar navbar-expand-lg container py-2">
-            <a class="navbar-brand me-lg-4" href="#">
+            <a class="navbar-brand me-lg-4" href="#top">
                 <img src="images/logo.png" class="site-logo" alt="ABC AUTO">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,11 +27,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav nav-links me-auto fs-6">
-                    <li class="nav-item"><a class="nav-link" href="#">Подбор авто</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Техцентр</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cars">Подбор авто</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Техцентр</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
                 </ul>
                 <button class="btn btn-accent callback-button " type="button" data-bs-toggle="modal"
                     data-bs-target="#callbackModal">Обратный звонок</button>
@@ -40,7 +40,7 @@
     </header>
 
     <main>
-        <section class="bg-body-secondary rounded-3 mx-3 my-4 py-4 py-xl-5">
+        <section class="bg-body-secondary rounded-3 mx-3 my-4 py-4 py-xl-5" id="cars">
             <div class="container">
                 <div class="row align-items-center g-4">
                     <div class="col-12 col-xl-6 hero-copy">
@@ -68,12 +68,12 @@
                     </div>
                     <div class="col-12 col-xl">
                         <label class="visually-hidden" for="priceName">Ваше имя</label>
-                        <input class="form-control bg-body-secondary py-3" name="name" type="text"
+                        <input class="form-control bg-body-secondary py-3" id="priceName" name="name" type="text"
                             placeholder="Ваше имя" autocomplete="name" required>
                     </div>
                     <div class="col-12 col-xl">
                         <label class="visually-hidden" for="pricePhone">Ваш телефон</label>
-                        <input class="form-control bg-body-secondary py-3" name="phone" type="tel"
+                        <input class="form-control bg-body-secondary py-3" id="pricePhone" name="phone" type="tel"
                             placeholder="Ваш телефон" autocomplete="tel" required>
                     </div>
                     <div class="col-12 col-xl-3">
@@ -86,7 +86,7 @@
             </form>
         </section>
 
-        <section class="container mt-5">
+        <section class="container mt-5" id="about">
             <div class="row align-items-center g-4 g-lg-5">
                 <div class="col-12 col-lg-6">
                     <h2 class="section-title fw-semibold mb-4">Об автосалоне ABC</h2>
@@ -98,7 +98,7 @@
                         Suspendisse vitae vestibulum quam. Vivamus lectus justo, bibendum at laoreet vel, rhoncus nec
                         sem. Phasellus at mollis magna, in bibendum massa. Praesent malesuada sit amet nibh ut
                         vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    <a class="btn btn-accent about-button" href="#">Узнать больше</a>
+                    <a class="btn btn-accent about-button" href="#contacts">Узнать больше</a>
                 </div>
                 <div class="col-12 col-lg-6">
                     <img src="images/photo-about.jpg" class="img-fluid rounded-3" alt="Команда автосалона ABC AUTO"
@@ -107,7 +107,7 @@
             </div>
         </section>
 
-        <section class="container mt-5 advantages-section">
+        <section class="container mt-5 advantages-section" id="advantages">
             <h3 class="section-title fw-bold mb-4">Преимущества Toyota</h3>
             <div class="row g-4">
                 <article class="col-12 col-md-6 col-xl-4">
@@ -167,8 +167,8 @@
             </div>
         </section>
 
-        <section class="container mt-5 mb-5">
-            <h3 class=" section-title fw-bold mb-4">Отзывы</h3>
+        <section class="container mt-5 mb-5" id="reviews">
+            <h3 class="section-title fw-bold mb-4">Отзывы</h3>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <article class="col">
                     <div class="review-card h-100">
@@ -203,7 +203,7 @@
         </section>
     </main>
 
-    <footer class="site-footer bg-dark text-white py-4">
+    <footer class="site-footer bg-dark text-white py-4" id="contacts">
         <div class="container">
             <div class="row align-items-center gy-3">
                 <div class="col-12 col-md-4 d-flex align-items-center gap-3">
@@ -229,7 +229,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title fs-4" id="callbackTitle">Заказать обратный звонок</h2>
+                    <h3 class="modal-title fs-4" id="callbackTitle">Заказать обратный звонок</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <form action="#" method="get">
