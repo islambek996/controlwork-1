@@ -33,7 +33,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
                 </ul>
-                <button class="btn btn-accent callback-button " type="button" data-bs-toggle="modal"
+                <button class="btn btn-accent callback-button" type="button" data-bs-toggle="modal"
                     data-bs-target="#callbackModal">Обратный звонок</button>
             </div>
         </nav>
@@ -60,7 +60,7 @@
             </div>
         </section>
 
-        <section class="container my-4" aria-labelledby="price-title">
+        <section class="container my-4">
             <form class="price-form border rounded-4 p-4 p-md-5" action="#" method="get">
                 <div class="row g-3 align-items-center">
                     <div class="col-12 col-xl-2">
@@ -68,12 +68,12 @@
                     </div>
                     <div class="col-12 col-xl">
                         <label class="visually-hidden" for="priceName">Ваше имя</label>
-                        <input class="form-control bg-body-secondary py-3" name="name" type="text"
+                        <input class="form-control bg-body-secondary py-3" id="priceName" name="name" type="text"
                             placeholder="Ваше имя" autocomplete="name" required>
                     </div>
                     <div class="col-12 col-xl">
                         <label class="visually-hidden" for="pricePhone">Ваш телефон</label>
-                        <input class="form-control bg-body-secondary py-3" name="phone" type="tel"
+                        <input class="form-control bg-body-secondary py-3" id="pricePhone" name="phone" type="tel"
                             placeholder="Ваш телефон" autocomplete="tel" required>
                     </div>
                     <div class="col-12 col-xl-3">
@@ -168,7 +168,7 @@
         </section>
 
         <section class="container mt-5 mb-5">
-            <h3 class=" section-title fw-bold mb-4">Отзывы</h3>
+            <h3 class="section-title fw-bold mb-4">Отзывы</h3>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <article class="col">
                     <div class="review-card h-100">
